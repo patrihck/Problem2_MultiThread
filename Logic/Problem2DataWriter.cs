@@ -10,7 +10,7 @@ namespace Problem2_MultiThread.Logic
     {
         public void WriteData(string path, string[][] rows)
         {
-            using (StreamWriter writer = File.CreateText(path))
+            using (StreamWriter writer = File.AppendText(path))
             {
                 for (int i = 0; i < rows.Length; i++)
                 {
